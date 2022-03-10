@@ -30,12 +30,12 @@ while not end_of_game:
     #TODO-4: - If the user has entered a letter they've already guessed, print the letter and let them know.
 
     if guess in display:
-      print(f"You guessed {guess} already, please choose another letter.")
+      print(f"You guessed '{guess}' already, please choose another letter.")
 
     #Check guessed letter
     for position in range(word_length):
         letter = chosen_word[position]
-        print(f"Current position: {position}\n Current letter: {letter}\n Guessed letter: {guess}")
+        # print(f"Current position: {position}\n Current letter: {letter}\n Guessed letter: {guess}")
         if letter == guess:
             display[position] = letter
 
